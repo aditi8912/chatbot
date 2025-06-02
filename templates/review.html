@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClauseAI - Review Results</title>
+</head>
+<body>
+    <h1>Reviewing Contract: {{ filename }}</h1>
+    <h2>Identified Clauses:</h2>
+    {% if clauses %}
+    <ul>
+        {% for clause in clauses %}
+        <li>{{ clause }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No clauses identified.</p>
+    {% endif %}
+    <a href="/">Analyze Another Contract</a>
+</body>
+</html>

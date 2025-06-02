@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClauseAI - Smart Contract Review</title>
+
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: aqua;
+            margin: 0;
+            padding: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .highlight-link{
+            background-color:rgba(116, 103, 209, 0.466);
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Contract for Review</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <br/>
+        <br/>
+        <input type="file" name="contract_file" accept=".txt">
+        <input type="submit" value="Analyze Contract">
+        <br/>
+        <br/>
+        <br/>
+        <p><small>Only .txt files are supported in this initial version.</small></p>
+    </form>
+</body>
+</html>
