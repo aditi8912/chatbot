@@ -33,6 +33,7 @@ if st.button("Send") or (user_input and st.session_state.get("user_input_submitt
         # Get response from Groq model
         response = groq_model.invoke(user_input)
         st.session_state["messages"].append({"role": "bot", "content": response.content})
+
         # st.experimental_rerun()  # Removed for compatibility with your Streamlit version
     else:
         st.warning("Please enter a message.")
